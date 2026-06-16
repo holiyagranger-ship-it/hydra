@@ -63,4 +63,9 @@ $ python my_app.py ++db.password=1234
 $ python my_app.py ++db.timeout=5
 ```
 
-You can enable [tab completion](/tutorials/basic/running_your_app/6_tab_completion.md) for your Hydra applications.
+You can enable [tab completion](/tutorials/basic/running_your_app/6_tab_com
+hydra.main(version_base=None)
+def my_app(cfg: DictConfig) -> None:
+    print(OmegaConf.to_yaml(cfg))
+    
+pletion.md) for your Hydra applications.
